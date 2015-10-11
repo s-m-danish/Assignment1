@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+@font-face{
+    font-family:customFont2;
+    src:url(CollegeDropout.ttf);
+}
+
+header{
+	background-color:#99CCFF;
+	text-align:center;
+	font-size:100px;
+	color:#990066;
+	font-family:customFont2;
+}
+.container{
+    float:left;
+	width:500px;
+	height:500px;
+	border:5px solid lightgreen;
+	left:350px;
+	top:-50px;
+	position:absolute;
+	background:white;
+	z-index:2;
+	opacity:0;
+	
+}
+
+.frame{
+	position:relative;
+	width:250px;
+	height:500px;
+	border:2px solid blue;
+	font-family:Comic Sans MS;
+	font-size:30px;
+	color:Crimson;
+	text-align:center;
+	
+	
+	
+}
+
+.options{
+   left:248px;
+   top:-504px;
+   position:relative;
+   width:250px;
+   height:500px;
+   border:2px solid blue;
+   text-align:center;
+   display:block;
+   vertical-align:middle;
+  
+  
+}
+
+.correct{
+	font-face:Arial;
+	font-size:30px;
+	color:gray;
+	
+}
+.inCorrect1{
+	font-face:Arial; font-size:30px; color:gray;}
+.inCorrect2{
+	font-face:Arial; font-size:30px; color:gray;}	
+.inCorrect3{
+	font-face:Arial; font-size:30px; color:gray;}
+
+[type=radio]:checked ~ label ~ .correct {
+  background-color:lightgreen;
+  
+}
+
+[type=radio]:checked ~ label ~ .inCorrect1 {
+  background-color:red;}
+
+[type=radio]:checked ~ label ~ .inCorrect2 {
+  background-color:red;}
+
+[type=radio]:checked ~ label ~ .inCorrect3 {
+  background-color:red;}
+
+.mcq{}
+
+.button{
+	width:auto;
+	height:auto;
+	position:absolute;
+	font-size:24px;
+	background-color:yellow;
+	border:2px solid gray;
+}  
+
+.canvas{
+	opacity:0;
+	z-index:1;
+	float:left;
+	width:500px;
+	height:500px;
+	border:5px solid lightgreen;
+	left:350px;
+	position:absolute;
+	background:white;
+	top:-150px;
+				//340
+}
+
+.canvas1{
+	opacity:0;
+	float:left;
+	z-index:0;
+	width:500px;
+	height:500px;
+	border:5px solid lightgreen;
+	left:350px;
+	position:absolute;
+	background:white;
+	top:-250px;
+			
+}
+
+.canvas2{
+	opacity:0;
+	float:left;
+	z-index:-1;
+	width:500px;
+	height:500px;
+	border:5px solid lightgreen;
+	left:350px;
+	position:absolute;
+	background:white;
+	top:-350px;
+	
+}
+
+[type=radio]:checked ~ label ~ .canvas {
+  z-index:3;
+  opacity:1;}
+[type=radio]:checked ~ label ~ .canvas1 {
+  z-index:4;
+  opacity:1;}
+  
+  [type=radio]:checked ~ label ~ .canvas2 {
+  z-index:5;
+  opacity:1;}
+  
+  [type=radio]:checked ~ label ~ .container{
+  z-index:6;
+  opacity:1;}
+  
+  .cap{font-family:customFont2;font-size:150px;}
+
+</style>
+</head>
+
+<body bgcolor=#CCFFFF>
+
+<header><div class="button"><a href="home.html">Home</a></div>Time for a short Quiz</header>
+<div class="button" style="top:200px; left 100px;">
+<div><input type="radio" id="tab-20" name="tab-group-1" checked><label for="tab-20">Question #1</label>
+<div class="container">
+	<div class="frame">Question #1
+		<img src="umbrella.jpg" width:"200" height"200">
+		<figcaption>What is in this picture?</figcaption>
+	</div>
+	<div class="options">
+	<h1>Options</h1>
+	<div class="mcq"><input type="radio" id="tab-1" name="tab-group-7"><label for="tab-1"></label><div class="inCorrect1">A Nail<br><br></div></div>
+	<div class="mcq"><input type="radio" id="tab-2" name="tab-group-7"><label for="tab-2"></label><div class="correct">An Umbrella<br><br></div></div>
+	<div class="mcq"><input type="radio" id="tab-3" name="tab-group-7"><label for="tab-3"></label><div class="inCorrect2">An Icecream<br><br></div>	</div>
+	<div class="mcq"><input type="radio" id="tab-4" name="tab-group-7"><label for="tab-4"></label><div class="inCorrect3">A Kite<br></div>	</div>
+	</div>
+</div>
+</div>
+</div>
+
+<div class="button" style="top:300px; left 100px;">
+	<input type="radio" id="tab-5" name="tab-group-1"><label for="tab-5">Question #2</label>
+	<div class="canvas" >
+		<div class="frame">Question #2<br><div class="cap">L</div><br> for???
+		
+		</div>
+		<div class="options">
+		<h1>Options</h1>
+		<div class="mcq"><input type="radio" id="tab-6" name="tab-group-2"><label for="tab-6"></label><div class="correct">A Llama<br><br></div></div>
+		<div class="mcq"><input type="radio" id="tab-7" name="tab-group-2"><label for="tab-7"></label><div class="inCorrect1">A Rabbit<br><br></div></div>
+		<div class="mcq"><input type="radio" id="tab-8" name="tab-group-2"><label for="tab-8"></label><div class="inCorrect2">A Fish<br><br></div>	</div>
+		<div class="mcq"><input type="radio" id="tab-9" name="tab-group-2"><label for="tab-9"></label><div class="inCorrect3">A Cat<br></div>	</div>
+		</div>
+</div>	
+
+</div>
+
+<div class="button" style="top:400px; left 100px;">
+	<div><input type="radio" id="tab-10" name="tab-group-1"><label for="tab-10">Question #3</label>
+	<div class="canvas1" >
+		<div class="frame">Question #3
+		<img src="zebra.jpg" width:"200" height"200">
+		<figcaption>What is in this picture?</figcaption>
+		</div>
+		<div class="options">
+		<h1>Options</h1>
+		<div class="mcq"><input type="radio" id="tab-11" name="tab-group-3"><label for="tab-11"></label><div class="inCorrect3">A Horse<br><br></div></div>
+		<div class="mcq"><input type="radio" id="tab-12" name="tab-group-3"><label for="tab-12"></label><div class="inCorrect1">A Cat<br><br></div></div>
+		<div class="mcq"><input type="radio" id="tab-13" name="tab-group-3"><label for="tab-13"></label><div class="inCorrect2">A Wolf<br><br></div>	</div>
+		<div class="mcq"><input type="radio" id="tab-14" name="tab-group-3"><label for="tab-14"></label><div class="correct">A Zebra<br></div>	</div>
+		</div>
+	
+</div>
+</div>
+</div>
+
+
+<div class="button" style="top:500px; left 100px;">
+	<div><input type="radio" id="tab-15" name="tab-group-1"><label for="tab-15">Question #4</label>
+	<div class="canvas2" >
+		<div class="frame">Question #4<br><div class="cap">H</div><br> for???
+		
+		</div>
+		<div class="options">
+		<h1>Options</h1>
+		<div class="mcq"><input type="radio" id="tab-16" name="tab-group-4"><label for="tab-16"></label><div class="correct">Hen<br><br></div></div>
+		<div class="mcq"><input type="radio" id="tab-17" name="tab-group-4"><label for="tab-17"></label><div class="inCorrect1">Quack<br><br></div></div>
+		<div class="mcq"><input type="radio" id="tab-18" name="tab-group-4"><label for="tab-18"></label><div class="inCorrect3">Xylophone<br><br></div>	</div>
+		<div class="mcq"><input type="radio" id="tab-19" name="tab-group-4"><label for="tab-19"></label><div class="inCorrect2">Jackal<br></div>	</div>
+		</div>
+	
+</div>
+</div>
+</div>	
+
+
+
+</body>
+</html>
